@@ -7,6 +7,33 @@
     <style>
       table {
         font-size: 75%;
+        border-collapse: collapse;
+      }
+
+      th:nth-child(2),
+      th:nth-child(3),
+      td:nth-child(2),
+      td:nth-child(3),
+      tfoot th:nth-child(1) {
+        text-align: right;
+        }
+
+      th:nth-child(1),
+      th:nth-child(4),
+      tfoot td:nth-child(2) {
+        text-align: left;
+        }
+
+      thead,
+      tfoot {
+        border-top: 1px solid grey;
+      }
+
+      tfoot {
+        border-bottom: 1px solid grey;
+      }
+      tbody tr:nth-child(odd) {
+        background-color: lightgrey;
       }
     </style>
 
