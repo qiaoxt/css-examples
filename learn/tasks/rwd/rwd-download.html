@@ -76,6 +76,46 @@
         padding: 0.5em 1em;
         color: #fff;
       }
+
+      @media screen and (min-width: 37.5em) {
+        header {
+          display: flex;
+          align-items: center;
+        }
+
+        header a {
+          border: none;
+        }
+
+        nav {
+          margin-left: auto;
+        }
+
+        nav ul {
+          display: flex;
+        }
+      }
+
+      @media screen and (min-width: 56em) {
+        .cards {
+          display: grid;
+          gap: 1em;
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+      }
+
+      @media screen and (min-width: 102.55362em) {
+        main {
+          display: grid;
+          grid-template-columns: 3fr 1fr;
+          gap: 1em;
+        }
+
+        .sidebar {
+          margin-top: 1em;
+        }
+      }
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
